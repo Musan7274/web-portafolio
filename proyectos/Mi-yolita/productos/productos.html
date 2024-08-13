@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Medicamentos</title>
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM/uL98dS6eGqiI4OnHVRpztFY/VhE5T5MBbWe0"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <h1>Mi Yolita</h1>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/ofertas/ofertas.html">Ofertas</a></li>
+                    <li><a href="/contacto/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-shopping-cart">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>Bienvenido a Mi Yolita</h1>
+        <p>Tu botica de confianza</p>
+    </div>
+
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <img src="/img/paracetamol.jpg" alt="Producto 1">
+                <h3>paracetamol</h3>
+                <p>Medicina para todo</p>
+                <p>s/20.00</p>
+                <button onclick="addToCart('Medicamento A')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/apronax.png" alt="Producto 2">
+                <h3>Relajante muscular</h3>
+                <p>relaja los musculos</p>
+                <p>s/35.00</p>
+                <button onclick="addToCart('Medicamento B')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/beta.jpg" alt="Producto 3">
+                <h3>Betametasona</h3>
+                <p>crema para los granos</p>
+                <p>s/4.50</p>
+                <button onclick="addToCart('Medicamento C')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/botikin.jpg" alt="Producto 3">
+                <h3>botikin</h3>
+                <p>s/150.00</p>
+                <button onclick="addToCart('Medicamento D')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/cerave.jpg" alt="Producto 3">
+                <h3>CeraVe</h3>
+                <p>cera para el rostro</p>
+                <p>s/.20.00</p>
+                <button onclick="addToCart('Medicamento E')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/cremaver.jpg" alt="Producto 3">
+                <h3>CremaVe</h3>
+                <p>crema para el rostro</p>
+                <p>s/25.00</p>
+                <button onclick="addToCart('Medicamento E')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/nicho-pech.jpg" alt="Producto 3">
+                <h3>Nitro</h3>
+                <p>Proteina en polvo</p>
+                <p>s/155.00</p>
+                <button onclick="addToCart('Medicamento E')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/dulcegabana.jpg" alt="Producto 3">
+                <h3>Dolce</h3>
+                <p>Perfume Dolce</p>
+                <p>s/35.00</p>
+                <button onclick="addToCart('Medicamento E')">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="/img/estetocopio.jpg" alt="Producto 3">
+                <h3>Estetocopio</h3>
+                <p>Intrumento Medico</p>
+                <p>s/250.00</p>
+                <button onclick="addToCart('Medicamento E')">Añadir al carrito</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Mi Yolita es tu botica de confianza, ofreciendo productos de calidad a precios accesibles.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="productos/productos.html">Productos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="recetas/receta.html">Recetas</a></li>
+                        <li><a href="contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Email: info@miyolita.com</li>
+                        <li>Teléfono: +51 123 456 789</li>
+                        <li>Dirección: Av. Principal 123, Lima, Perú</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2024 Mi Yolita. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+
+</html>

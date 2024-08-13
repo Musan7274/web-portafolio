@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrito.css">
+    <title>Compra</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="../img/logo.png" alt="Logo de la tienda" class="logo">
+        <h1>XybertechX</h1>
+    </div>
+    <div class="container">
+        <section class="cart">
+            <div class="selected-items">
+                <!-- Lista de artículos seleccionados -->
+            </div>
+            <div class="summary">
+                <h2>Resumen de Compra</h2>
+                <label for="coupon">Añadir Cupón:</label>
+                <input type="text" id="coupon" placeholder="Ingrese su cupón">
+                <div class="totals">
+                    <p>Subtotal: <span id="subtotal">s/.00.00</span></p>
+                    <p>Total: <span id="total">s/.00.00</span></p>
+                </div>
+                <button onclick="proceedToCheckout()">Finalizar Compra</button>
+            </div>
+        </section>
+    </div>
+    <script src="carrito.js"></script>
+</body>
+</html>

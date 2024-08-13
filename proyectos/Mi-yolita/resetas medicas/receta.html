@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Médicas</title>
+    <link rel="stylesheet" href="reseta.css">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Logo" class="logo">
+        <h1>Recetas Médicas</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/contacto/contacto.html">Contacto</a></li>
+                <li><a href="#mejores_medicamentos">Mejores Medicamentos</a></li>
+                <li><a href="#subir_receta">Subir Receta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mejores_medicamentos" class="info-section">
+            <h2>Mejores Medicamentos</h2>
+            <div class="medicamentos-carousel">
+                <div class="medicamento">
+                    <img src="/img/apronax.png" alt="Medicamento 1">
+                    <h3>Medicamento 1</h3>
+                    <p>Descripción del medicamento 1.</p>
+                </div>
+                <div class="medicamento">
+                    <img src="/img/cera ve.jpg" alt="Medicamento 2">
+                    <h3>Medicamento 2</h3>
+                    <p>Descripción del medicamento 2.</p>
+                </div>
+                <div class="medicamento">
+                    <img src="/img/fluconazol.jpeg" alt="Medicamento 3">
+                    <h3>Medicamento 3</h3>
+                    <p>Descripción del medicamento 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subir_receta" class="info-section">
+            <h2>Subir Receta</h2>
+            <form id="recetaForm">
+                <label for="recetaImage">Sube tu receta médica:</label>
+                <input type="file" id="recetaImage" accept="image/*" required>
+                <button type="submit">Subir</button>
+            </form>
+            <div id="recetaPreview" class="receta-preview">
+                <h3>Vista previa de la receta:</h3>
+                <img id="recetaImg" src="" alt="Vista previa de la receta">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Productos Farmacéuticos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="recetas.js"></script>
+</body>
+</html>

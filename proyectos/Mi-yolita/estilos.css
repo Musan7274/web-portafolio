@@ -1,0 +1,364 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons li {
+    margin-left: 15px;
+}
+
+.nav-icons li a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-icons li a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #343a40;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero .carousel-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .carousel-item.active {
+    display: block;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.hero .cta-button {
+    background-color: #ffdd57;
+    color: #343a40;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #e6c04d;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.products .container {
+    text-align: left;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #007bff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.products .product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.products .product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.products .product-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.products .product-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Offers Section */
+.offers {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.offers .offer-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.offers .offer-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offers .offer-details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.offers .offer-details h3 {
+    margin-top: 0;
+}
+
+.offers .cta-button {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.offers .cta-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.testimonials .testimonial-item {
+    margin-top: 20px;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+}
+
+.testimonials .testimonial-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+    border-top: 4px solid #007bff;
+    position: relative;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .footer-column h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 20px;
+}
+
+footer .footer-column p,
+footer .footer-column ul {
+    font-size: 16px;
+}
+
+footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-column a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-column a:hover {
+    color: #ffdd57;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .footer-bottom p {
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+footer .social-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    footer .footer-column {
+        width: 100%;
+    }
+}
+
+/* Estilos para los iconos de redes sociales en el pie de página */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}

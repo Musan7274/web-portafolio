@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra - Mi Tienda</title>
+    <link rel="stylesheet" href="carritocompra.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Tu HTML existente aquí -->
+    <header>
+        <div class="container">
+            <img src="/img/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Carrito de Compra</h1>
+        <div id="cart-container">
+            <!-- Aquí se agregarán los productos del carrito dinámicamente -->
+        </div>
+        <div class="total">
+            <p>Total: <span id="total-price">$0.00</span></p>
+        </div>
+        <div class="payment-methods">
+            <h3>Métodos de Pago</h3>
+            <label>
+                <input type="checkbox" name="payment" value="yape">
+                <svg width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#FF5722" />
+                    <text x="25" y="30" font-size="12" text-anchor="middle" fill="#fff">Yape</text>
+                </svg>
+            </label>
+            <label>
+                <input type="checkbox" name="payment" value="visa">
+                <svg width="50" height="50">
+                    <rect width="50" height="30" fill="#1A1F71" />
+                    <text x="25" y="20" font-size="12" text-anchor="middle" fill="#fff">Visa</text>
+                </svg>
+            </label>
+            <label>
+                <input type="checkbox" name="payment" value="plin">
+                <svg width="50" height="50">
+                    <circle cx="25" cy="25" r="20" fill="#009688" />
+                    <text x="25" y="30" font-size="12" text-anchor="middle" fill="#fff">Plin</text>
+                </svg>
+            </label>
+            <label>
+                <input type="checkbox" name="payment" value="mastercard">
+                <svg width="50" height="50">
+                    <circle cx="15" cy="25" r="15" fill="#FF5F00" />
+                    <circle cx="35" cy="25" r="15" fill="#EB001B" />
+                    <circle cx="25" cy="25" r="15" fill="#F79E1B" />
+                </svg>
+            </label>
+            <label>
+                <input type="checkbox" name="payment" value="paypal">
+                <svg width="50" height="50">
+                    <rect width="50" height="30" fill="#003087" />
+                    <text x="25" y="20" font-size="12" text-anchor="middle" fill="#fff">PayPal</text>
+                </svg>
+            </label>
+        </div>
+        <div class="buttons">
+            <button class="button">Pagar</button>
+            <button class="button">Limpiar Carrito</button>
+            <button class="button">Continuar Comprando</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+    <script src="carritocompra.js"></script>
+</body>
+</html>

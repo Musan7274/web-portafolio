@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.total, .payment-methods, .buttons {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.total p, .payment-methods h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-methods label {
+    cursor: pointer;
+}
+
+.payment-methods input[type="radio"] {
+    display: none;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.payment-methods input[type="radio"]:checked + img {
+    transform: scale(1.1);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttons .button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}

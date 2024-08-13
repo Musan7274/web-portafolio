@@ -1,0 +1,361 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #007bff; /* Bordes en azul */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Color en azul para hover */
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #007bff; /* Color en azul */
+}
+
+#sobre-mi p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.perfil-img {
+    display: block;
+    max-width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #007bff; /* Bordes en azul */
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.habilidad {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.habilidad i {
+    font-size: 3em;
+    color: #007bff; /* Color en azul */
+    margin-bottom: 10px;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.proyecto {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: none;
+}
+
+#contacto {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border: 2px solid #007bff; /* Bordes en azul */
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Color en azul */
+}
+
+#contacto .info,
+#contacto .blogs {
+    margin-bottom: 30px;
+}
+
+#contacto .info h3,
+#contacto .blogs h3 {
+    font-size: 1.8em;
+    color: #007bff; /* Color en azul */
+    margin-bottom: 10px;
+}
+
+#contacto .info p,
+#contacto .blogs p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#contacto .info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contacto .info li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#contacto .info li strong {
+    color: #007bff; /* Color en azul */
+}
+
+#contacto .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contacto .blog-post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto .blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#contacto .blog-post h4 {
+    margin-bottom: 10px;
+    color: #007bff; /* Color en azul */
+}
+
+#contacto .blog-post a {
+    color: #007bff; /* Color en azul */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto .blog-post a:hover {
+    text-decoration: underline;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; /* Bordes en azul */
+}
+
+#contacto form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #007bff; /* Color en azul */
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto form input:focus,
+#contacto form textarea:focus {
+    border-color: #007bff; /* Borde en azul al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#contacto form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #007bff; /* Color de fondo en azul */
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+}
+
+#contacto form button:hover {
+    background-color: #0056b3; /* Azul más oscuro para hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #007bff; /* Bordes en azul */
+}
+
+/* Estilos adicionales responsivos */
+@media (max-width: 768px) {
+    .habilidades-grid,
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #contacto {
+        padding: 20px;
+    }
+
+    #contacto form {
+        padding: 20px;
+    }
+}
+
+/* Animaciones y estilos adicionales */
+header {
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.proyecto {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #007bff; /* Color de icono en azul */
+    font-size: 2em; /* Tamaño de los iconos */
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0056b3; /* Azul más oscuro para hover */
+}
+

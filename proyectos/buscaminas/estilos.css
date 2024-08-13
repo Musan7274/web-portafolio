@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    font-size: 16px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: transform 0.2s ease;
+    margin: 0 10px;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#minefield {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #495057;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.cell.revealed {
+    background-color: #adb5bd;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cell.flagged {
+    background-color: #ffc107;
+    color: #495057;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#restartButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#pauseButton {
+    background-color: #ffc107;
+    color: #495057;
+}
+
+#resumeButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#resetButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hash Techie Official</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR CREATION -->
+   <header class="header">
+    <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="#">Ayuda</a>
+    </nav>
+    <form action="" class="search-bar">
+       <input type="text"  placeholder="Buscar...">
+       <button><i class='bx bx-search'></i></button>
+    </form>
+   </header>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo"><i class='bx bxs-user'></i>XybertechX</h2>
+            <div class="text-item">
+                <h2>Bienvenido! <br><span>
+                   a XybertechX!
+                </span></h2>
+                <p>Inicia sesion para loguearte oh crea una cuenta para poder iniciar sesion</p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="form-box login">
+                <form onsubmit="return verificarCredenciales()">
+                    <h2>Ingresar</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password"  required>
+                        <label>Clave</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Recuerda</label>
+                        <a href="#">Olvidaste tu clave</a>
+                    </div>
+                    <button class="btn">Ingreso</button>
+                    <div class="create-account">
+                        <p>Crear una cuenta nueva? <a href="#" class="register-link">Ingreso</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="">
+                    <h2>Ingreso</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label >Nombre de Usuario</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                        <label>Clave</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Estoy de acuerdo con los terminos y condiciones</label>
+                    </div>
+                    <button class="btn">Ingreso</button>
+                    <div class="create-account">
+                        <p>Tienes una cuenta? <a href="#" class="login-link">Ingresa</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- SIGN UP FORM CREATION -->
+
+    <script src="login.js"></script>
+</body>
+</html>
